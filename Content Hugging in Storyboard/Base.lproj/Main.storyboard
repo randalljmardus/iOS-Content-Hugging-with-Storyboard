@@ -24,7 +24,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40V-IW-7G7">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40V-IW-7G7">
                                 <rect key="frame" x="278" y="95" width="97" height="30"/>
                                 <color key="backgroundColor" red="0.059383616199846778" green="0.72877160853302869" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -34,12 +34,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lef-nI-c7h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2UN-a4-X22"/>
+                            <constraint firstItem="40V-IW-7G7" firstAttribute="leading" secondItem="lef-nI-c7h" secondAttribute="trailing" id="4Hg-qO-lBE"/>
                             <constraint firstAttribute="trailing" secondItem="40V-IW-7G7" secondAttribute="trailing" id="Fdj-wl-vbb"/>
                             <constraint firstItem="40V-IW-7G7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="cey-Xd-Fdg"/>
                             <constraint firstItem="40V-IW-7G7" firstAttribute="baseline" secondItem="lef-nI-c7h" secondAttribute="baseline" id="unR-ok-mm2"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nameField" destination="40V-IW-7G7" id="PVo-7Q-VRU"/>
+                        <outlet property="nameLabel" destination="lef-nI-c7h" id="Hg7-9t-Fpb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

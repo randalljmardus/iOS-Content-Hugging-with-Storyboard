@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
+    print("Label horizontal priority", nameLabel.contentHuggingPriorityForAxis(.Horizontal))
+    print("Text field horizontal priority", nameField.contentHuggingPriorityForAxis(.Horizontal))
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
